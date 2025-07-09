@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    color: #545454;
+}
+
+/* 
+background color--#E7E7E7
+*/
+
+body, html{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    display: none;
+    overflow: hidden;
+}
+
+p{
+    font-size: 1rem;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 17.5rem;
+    /* height: 100vh; */
+    background: #E7E7E7;
+}
+
+.header{
+    width: 100%;
+    height: 26rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cover{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* filter: grayscale(100%); */
+}
+
+.pfpbox{
+    position: absolute;
+    top: 26rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E7E7E7;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+}
+
+.pfpimg{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 8rem;
+    height: 8rem;
+    border: 4px solid green;
+}
+
+.title{
+    position: absolute;
+    top: 34.5rem;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+    width: 40rem
+}
+
+.title p{
+    text-align: center;
+}
+.title h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.socialmedia{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    gap: 1rem;
+}
+
+.socialLink img{
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.socialLink{
+    text-decoration: none;
+    width: 24rem;
+    height: 4rem;
+    display: block;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1rem;
+    border-radius: 6rem;
+}
+
+.ig{
+    background: #833ab4;
+    background: linear-gradient(
+    to right,
+    #833ab4,#fd1d1d,#fcb045
+    );
+}
+
+.ig i{
+    color: #ffffff;
+}
+
+.iconText{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.xTwitter{
+    background: #000000;
+}
+
+.xTwitter i{
+    color: #ffffff;
+}
+
+.bluesky{
+    background: #00A4F0;
+}
+.bluesky i{
+    color: #ffffff;
+}
+
+.cara{
+    background: #000000;
+}
+
+.pintrest{
+    background: #E60023;
+}
+
+.pintrest i{
+    color: #ffffff;
+}
+
+.thread{
+    background: #000000;
+}
+
+.socialLink i{
+    font-size: 2rem;
+}
+
+ion-icon{
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+@media (max-width: 768px){
+    html{
+        font-size: 46%;
+    }
+    .container{
+        height: 100svh
+    }
+}
+
+@media(max-width: 425px){
+
+    /* html{
+        font-size: 40%;
+    } */
+    .header{
+        height: 20rem;
+    }
+
+    .pfpbox{
+        top: 20.5rem;
+        width: 16rem;
+        height: 16rem;
+    }
+
+    .title{
+        top: 37.5rem;
+        gap: 2px;
+        width: 48.5rem;
+    }
+
+    .container{
+        justify-content: unset;
+        gap: 32rem;
+    }
+
+    .title h1{
+        font-size: 3.8rem;
+    }
+
+    .title p{
+    font-size: 1.8rem;
+    }
+
+    .pfpimg{
+        width: 13rem;
+        height: 13rem;
+    }
+
+    .socialLink {
+        width: 46.5rem;
+        height: 6.5rem;
+    }
+
+    .socialLink i{
+        font-size: 3.4rem;
+    }
+
+    .socialLink img{
+        width: 3.8rem;
+        height: 3.8rem;
+    }
+
+    .iconText{
+        font-size: 2.4rem;
+    }
+
+    .socialmedia{
+        gap: 1.4rem;
+    }
+}
+
+/* @media(width: 430px){
+    html{
+        font-size: 40%;
+    }
+
+    .container{
+        gap: 28rem;
+    }
+
+    .title {
+        top: 36.5rem;
+    }
+} */
